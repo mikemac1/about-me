@@ -2,7 +2,7 @@
 
 ## About Me
 
-I build an app with a direct and powerful purpose. It does all of the things that it accomplishes well. I should describe the purpose and functionality so those that visit my README understand the app
+This site is a biography that gives some interaction between the user and site to gain insight about myself. The site has five 'Yes" or 'No" questions using JS' prompt() that will provide specifics about me the developer.
 
 ### Author: Mike McCarty
 
@@ -10,7 +10,6 @@ I build an app with a direct and powerful purpose. It does all of the things tha
 
 * [submission PR](http://xyz.com) (NOT used in today's lab)
 * [Eric Meyer's reset.css file](https://meyerweb.com/eric/tools/css/reset/)
-* 
 
 ### Reflections and Comments
 

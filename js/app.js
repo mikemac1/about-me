@@ -2,47 +2,68 @@
 
 console.log('Hello!');
 
-let booleanValue = true;
+let visitorsName = prompt('What is your name?');
+console.log(visitorsName);
+alert('Hello ' + visitorsName + "! Welcome to Mike's site.");
 
-if (booleanValue) {
-    console.log('if condition is true this will print in console');
+let country = prompt('Have you lived in another country besides the United States?').toLowerCase();
+console.log(country);
+
+if (country === 'yes' || country === 'y') {
+    console.log('You did it!'); 
+    alert('That is very cool ' + visitorsName + '! Mike has lived in 2 different countries.');
+} else if (country === 'no' || country === 'n') {
+    alert("Don't worry " + visitorsName + ". You have lots of time to get that opportunity. Mike has lived in 2 different countries.");
+} else {
+    alert("In case you try this again, I need a yes or no answer " + visitorsName + ". FYI, Mike has lived in 2 different countries.");
 }
 
-/* 
+let fish = prompt('Have you ever taken care of pet fish before?').toLowerCase();
+console.log(fish);
 
-&& - is the 'logical and'
-One false with an && and it will not run
-
-|| - is the 'loigcial or' (double pipe)
-One true and it will work
-
-! = 'logical not' often called bang
-
-*/
-
-let trueValue = true;
-let falseValue = false;
-
-if (trueValue && falseValue) {
-    console.log('it evaluated to true'); /* this does not run */
+if (fish === 'yes' || fish === 'y') {
+    console.log('You did it!'); 
+    alert('Wow ' + visitorsName + '! How ironic, Mike takes care of five different fish tanks right now.');
+} else if (fish === 'no' || fish === 'n') {
+    alert("Taking care of fish is not for everyone " + visitorsName + ". Mike loves taking care of his 5 fish tanks.");
+} else {
+    alert("Mike is an avid fish keeper." + visitorsName + ", if you try this again please select yes or no for your answer.");
 }
 
-if (trueValue || falseValue) {
-    console.log('it evaluated to true'); /* this runs */
+let swim = prompt('Do you like to swim underwater?').toLowerCase();
+console.log(swim);
+
+if (swim === 'yes' || swim === 'y') {
+    console.log('You did it!');
+    alert(visitorsName + ', well you have that up on Mike! He is not big on swimming but after being on a submarine you can go underwater for days on end and never get wet!');
+} else if (swim === 'no' || swim === 'n') {
+    alert(visitorsName + ", Mike cannot stand putting his head underwater so that is something you have in common.");
+} else {
+    alert("Being a former submariner Mike got to be underwater a lot." + visitorsName + ", if you want to ry this again please select yes or no for your answer and you can find out if Mike likes to swim underwater.");
 }
 
-let userName = prompt('What is your name?');
-console.log(userName);
+let petDog = prompt('Do you like having dogs as a pet?').toLowerCase();
+console.log(petDog);
 
-let likesStarWars = prompt('Do you like Star Wars?');
-likesStarWars = likesStarWars.toLowerCase();
-console.log(likesStarWars);
-
-if (likesStarWars === 'yes' || likesStarWars === 'y') {
-    console.log('You are correct. I do like Star Wars.');
-
-} else if (likesStarWars === 'no' || likesStarWars === 'n') {
-    console.log("I'm sorry but Star Wars is the best.");
-}  else {
-    console.log('Please answer with yes or no.');
+if (petDog === 'yes' || petDog === 'y') {
+    console.log('You did it!');
+    alert("You and Mike have this is common. Mike has 2 dogs, Laszlo and Blondie and both have lab in them.");
+} else if (petDog === 'no' || petDog === 'n') {
+    alert("You know it takes a lot of responsibility to take care of a dog so I can understand not everyone does. Mike has 2 dogs, Laszlo and Blondie.");
+} else {
+    alert(visitorsName + ", next time you want to try this again, please select yes or no for your answer and you can find out if Mike likes dogs as pets.");
 }
+
+let farmer = prompt('Have you ever wanted to own a farm?').toLowerCase();
+console.log(farmer);
+
+if (farmer === 'yes' || farmer === 'y') {
+    console.log('You did it!');
+    alert(visitorsName + ", well Mike would be happy to tell you what it is like to be farmer. He has 3 acres with a large greenhouse and grew 7 different vegetables last season.");
+} else if (farmer === 'no' || farmer === 'n') {
+    alert("It takes a LOT of work to be a farmer " + visitorsName + ". so I can understand not everyone does. Mike has 3 acres with a large greenhouse and grew 7 different vegetables last season.");
+} else {
+    alert(visitorsName + ", next time you want to try this again, please select yes or no for your answer and you can find out if Mike would want to be a farmer.");
+}
+
+document.write('Hi ' + visitorsName + "! Welcome to Mike's page. Thanks for taking time to visit and answering my questions!");
