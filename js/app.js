@@ -76,4 +76,80 @@ if (farmer === 'yes' || farmer === 'y') {
     alert(visitorsName + ", next time you want to try this again, please enter yes or no for your answer and you can find out what Mike thinks of being a farmer.");
 }
 
-document.write('Hi ' + visitorsName + "! Welcome to Mike's page. Thanks for taking time to visit and answering my questions!");
+// Question 6
+// number to guess
+let mikesCountries = 16;
+// number of tries
+let tries = 4;
+// starting score
+let score1 = 10;
+
+for (let i = 0; i < tries; i++) {
+    // users guess
+    let userGuess = prompt(`Mike has lived in two other countries besides the United States but visited a lot more. You have ${tries - i} attempts left. Between 5 & 20 what is the number of countries Mike has visited? ONLY enter a number.`);
+    // Conditions comparison
+    // Users' guess not a number
+    if (userGuess !== typeof (mikesCountries)) {
+        prompt('Please enter a number and no combination of letters and numbers. PLEASE!!!');
+        console.log(`This is try #${i + 1}!`);
+        // Users guess too high & higher than 20
+    } else if (userGuess > mikesCountries && userGuess > 20) {
+        prompt('I\'m sorry your attempt was incorrect and WAY too high. Remember the number is between 5 & 20.');
+        console.log(`This is try #${i + 1}! And your guess was WAY too high.`);
+        // Users guess too high
+    } else if (userGuess > mikesCountries && userGuess < 20) {
+        prompt('I\'m sorry your attempt was incorrect and too high.');
+        console.log(`This is try #${i + 1}! And your guess was too high.`);
+        // Users' guess too low & less than 5
+    } else if (userGuess < mikesCountries && userGuess < 5) {
+        prompt('I\'m sorry your attempt was incorrect and WAY too low. Remember the number is between 5 & 20.');
+        console.log(`This is try #${i + 1}! And your guess was WAY too low.`);
+        // Users' guess too low
+    } else if (userGuess < mikesCountries) {
+        prompt('I\'m sorry your attempt was incorrect and too low.');
+        console.log(`This is try #${i + 1}! And your guess was too low.`);
+        // Users' guess correct with score
+    } else if (userGuess === mikesCountries) {
+        prompt(`CONGRATULATIONS! You guessed correctly on your ${i + 1} attempt. Your score is ${score1 - (2 * i)}.`);
+        console.log(`This is try #${i + 1}! And your guess was correct.`);
+        return score1;
+    } else {
+        prompt(`You have 0 attempts and the correct answer was 16.  On to the last question.`);
+        score1 = 0;
+        console.log(`This is try #${i + 1}! And you are out of guesses!`);
+        return score1;
+    }
+}
+
+// Question 7
+// Array of countries
+let countries = ['KOREA', 'JAPAN', 'THAILAND', 'AUSTRALIA', 'PHILIPPINES',];
+// number of attempts
+let attempts = 6;
+// starting score
+let score2 = 10;
+
+for (let j = 0; j < attempts; i++) {
+    // users guess
+    let usersCountry = prompt(`Mike has visited 16 countries outside the United States but has five favorites. You have ${tries - i} attempts left. What do you believe is one of Mike's favorite countries? Do NOT enter any numbers & watch your spelling.`).toUpperCase();
+    // Conditions comparison
+    for (let k = 0; k < countries.length; k++) {
+        // Users guess is correct
+        if (usersCountry === myArray[k]) {
+            console.log('You are correct with your country.');
+            prompt(`CONGRATULATIONS! You guessed correctly on your ${i + 1} attempt. Your score is ${score2 - (2 * i)}.`);
+            return score2;
+            // Users guess is incorrect
+        } else if(usersCountry !== myArray[k]) {
+            console.log('You are incorrect with your country.');
+            prompt(`You guessed incorrectly on your ${i + 1} attempt.`);
+        } else {
+            prompt('You have 0 attempts and the correct answer was any of the following: Korea, Japan, Thailand, Australia, or the Philipines.');
+            score2 = 0;
+            console.log(`This is try #${i + 1}! And you are out of guesses!`);
+            return score2;
+        }
+        }
+    }
+
+    alert('Thank you ' + visitorsName + 'for visiting and have a great day!');
