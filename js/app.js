@@ -44,19 +44,22 @@ function question2() {
 question2();
 
 // question 3
-let swim = prompt('Do you like to swim underwater?').toLowerCase();
-console.log(swim);
+function question3() {
+    let swim = prompt('Do you like to swim underwater?').toLowerCase();
+    console.log(swim);
 
-if (swim === 'yes' || swim === 'y') {
-    // console.log('You did it with a yes!');
-    alert(visitorsName + ', well you have that up on Mike! He is not big on swimming but after being on a submarine he went underwater for days on end and never got wet!');
-} else if (swim === 'no' || swim === 'n') {
-    // console.log('You did it with a no!');
-    alert(visitorsName + ", Mike cannot stand putting his head underwater either that is why he served on 2 submarines so he could keep his head dry.");
-} else {
-    // console.log("You didn't do it!"); 
-    alert("Being a former submariner Mike got to be underwater a lot." + visitorsName + ", if you want to try this again please enter yes or no for your answer and you can find out if Mike likes to swim underwater.");
+    if (swim === 'yes' || swim === 'y') {
+        // console.log('You did it with a yes!');
+        alert(visitorsName + ', well you have that up on Mike! He is not big on swimming but after being on a submarine he went underwater for days on end and never got wet!');
+    } else if (swim === 'no' || swim === 'n') {
+        // console.log('You did it with a no!');
+        alert(visitorsName + ", Mike cannot stand putting his head underwater either that is why he served on 2 submarines so he could keep his head dry.");
+    } else {
+        // console.log("You didn't do it!"); 
+        alert("Being a former submariner Mike got to be underwater a lot." + visitorsName + ", if you want to try this again please enter yes or no for your answer and you can find out if Mike likes to swim underwater.");
+    }
 }
+question3();
 
 // question 4
 let petDog = prompt('Do you like having dogs as a pet?').toLowerCase();
