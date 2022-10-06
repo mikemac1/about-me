@@ -146,50 +146,54 @@ function question6() {
 question6();
 
 // Question 7
-// Array of countries
-let countries = ['KOREA', 'JAPAN', 'THAILAND', 'AUSTRALIA', 'PHILIPPINES'];
-// number of attempts allowed
-let attempts = 6;
-// number of attempts started
-let userAttempts = 0;
-// starting score
-let score2 = 10;
+function question7() {
+    // Array of countries
+    let countries = ['KOREA', 'JAPAN', 'THAILAND', 'AUSTRALIA', 'PHILIPPINES'];
+    // number of attempts allowed
+    let attempts = 6;
+    // number of attempts started
+    let userAttempts = 0;
+    // starting score
+    let score2 = 10;
 
-while (userAttempts < attempts) {
-    // users guess
-    let usersCountry = prompt(`Mike has visited 16 countries outside the United States but has five favorites. You have ${attempts - userAttempts} attempts left. What do you believe is one of Mike's favorite countries? Do NOT enter any numbers & watch your spelling.`).toUpperCase();
-    // Conditions comparison
-    let guessCorrect = false;
+    while (userAttempts < attempts) {
+        // users guess
+        let usersCountry = prompt(`Mike has visited 16 countries outside the United States but has five favorites. You have ${attempts - userAttempts} attempts left. What do you believe is one of Mike's favorite countries? Do NOT enter any numbers & watch your spelling.`).toUpperCase();
+        // Conditions comparison
+        let guessCorrect = false;
 
-    for (let k = 0; k < countries.length; k++) {
-        // Users guess is correct
-        if (usersCountry === countries[k]) {
-            score2 = score2 - (2 * userAttempts);
-            alert(`CONGRATULATIONS! You guessed correctly on your ${userAttempts + 1} attempt. Your score is ${score2 - (2 * userAttempts)}.`);
-            console.log(`You are correct with ${usersCountry}.`);
-            guessCorrect = true;
-            break;
-            // Users guess is incorrect
+        for (let k = 0; k < countries.length; k++) {
+            // Users guess is correct
+            if (usersCountry === countries[k]) {
+                score2 = score2 - (2 * userAttempts);
+                alert(`CONGRATULATIONS! You guessed correctly on your ${userAttempts + 1} attempt. Your score is ${score2 - (2 * userAttempts)}.`);
+                console.log(`You are correct with ${usersCountry}.`);
+                guessCorrect = true;
+                break;
+                // Users guess is incorrect
+            }
         }
-    }
 
-    if (guessCorrect) {
-        break;
-    }
+        if (guessCorrect) {
+            break;
+        }
 
-    if (!guessCorrect && userAttempts < 5) {
-        alert(`You guessed incorrectly on your ${userAttempts + 1} attempt, and you have ${attempts - userAttempts - 1} attempts left.`);
-        console.log(`You are incorrect with your country and you have ${attempts - userAttempts - 1} left.`);
-    }
+        if (!guessCorrect && userAttempts < 5) {
+            alert(`You guessed incorrectly on your ${userAttempts + 1} attempt, and you have ${attempts - userAttempts - 1} attempts left.`);
+            console.log(`You are incorrect with your country and you have ${attempts - userAttempts - 1} left.`);
+        }
 
-    if (!guessCorrect && userAttempts === 5) {
-        alert('You have 0 attempts and the correct answer was any of the following: Korea, Japan, Thailand, Australia, or the Philipines.');
-        score2 = 0;
-        console.log(`This is try #${userAttempts + 1}! And you are out of guesses!`);
-        break;
+        if (!guessCorrect && userAttempts === 5) {
+            alert('You have 0 attempts and the correct answer was any of the following: Korea, Japan, Thailand, Australia, or the Philipines.');
+            score2 = 0;
+            console.log(`This is try #${userAttempts + 1}! And you are out of guesses!`);
+            break;
+        }
+        userAttempts++;
     }
-    userAttempts++;
 }
+question7();
+
 console.log('Yeah! You made it out of the while loop.')
 alert(`Congratulations ${visitorsName} your total score for the last two questions was ${score1 + score2}!`);
 
