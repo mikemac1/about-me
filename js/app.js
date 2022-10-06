@@ -81,66 +81,69 @@ question4();
 
 // question 5
 function question5() {
-let farmer = prompt('Have you ever wanted to own a farm?').toLowerCase();
-console.log(farmer);
+    let farmer = prompt('Have you ever wanted to own a farm?').toLowerCase();
+    console.log(farmer);
 
-if (farmer === 'yes' || farmer === 'y') {
-    // console.log('You did it with a yes!');
-    alert(visitorsName + ", well Mike would be happy to tell you what it is like to be farmer. He has 3 acres with a large greenhouse and grew 7 different vegetables last season.");
-} else if (farmer === 'no' || farmer === 'n') {
-    // console.log('You did it with a no!');
-    alert("It takes a LOT of work to be a farmer " + visitorsName + ". so I can understand not everyone does. Mike has 3 acres with a large greenhouse and grew 7 different vegetables last season.");
-} else {
-    // console.log("You didn't do it!"); 
-    alert(visitorsName + ", next time you want to try this again, please enter yes or no for your answer and you can find out what Mike thinks of being a farmer.");
-}
+    if (farmer === 'yes' || farmer === 'y') {
+        // console.log('You did it with a yes!');
+        alert(visitorsName + ", well Mike would be happy to tell you what it is like to be farmer. He has 3 acres with a large greenhouse and grew 7 different vegetables last season.");
+    } else if (farmer === 'no' || farmer === 'n') {
+        // console.log('You did it with a no!');
+        alert("It takes a LOT of work to be a farmer " + visitorsName + ". so I can understand not everyone does. Mike has 3 acres with a large greenhouse and grew 7 different vegetables last season.");
+    } else {
+        // console.log("You didn't do it!"); 
+        alert(visitorsName + ", next time you want to try this again, please enter yes or no for your answer and you can find out what Mike thinks of being a farmer.");
+    }
 }
 question5();
 
 // Question 6
-// number to guess
-let mikesCountries = 16;
-// number of tries
-let tries = 4;
-// starting score
-let score1 = 10;
+function question6() {
+    // number to guess
+    let mikesCountries = 16;
+    // number of tries
+    let tries = 4;
+    // starting score
+    let score1 = 10;
 
-for (let i = 0; i < tries; i++) {
-    // users guess
-    let userGuess = prompt(`Mike has lived in two other countries besides the United States but visited a lot more. You have ${tries - i} attempts left. Between 5 & 20 what is the number of countries Mike has visited? ONLY enter a number.`);
-    userGuess = parseInt(userGuess);
-    // Conditions comparison
-    // Users guess too high & higher than 20
-    if (userGuess > mikesCountries && userGuess > 20 && i < 3) {
-        alert('I\'m sorry your attempt was incorrect and WAY too high. Remember the number is between 5 & 20.');
-        console.log(`This is try #${i + 1}! And your guess was WAY too high.`);
-        // Users guess too high
-    } else if (userGuess > mikesCountries && userGuess < 20 && i < 3) {
-        alert('I\'m sorry your attempt was incorrect and too high.');
-        console.log(`This is try #${i + 1}! And your guess was too high.`);
-        // Users' guess too low & less than 5
-    } else if (userGuess < mikesCountries && userGuess < 5 && i < 3) {
-        alert('I\'m sorry your attempt was incorrect and WAY too low. Remember the number is between 5 & 20.');
-        console.log(`This is try #${i + 1}! And your guess was WAY too low.`);
-        // Users' guess too low
-    } else if (userGuess < mikesCountries && i < 3) {
-        alert('I\'m sorry your attempt was incorrect and too low.');
-        console.log(`This is try #${i + 1}! And your guess was too low.`);
-        // Users' guess correct with score
-    } else if (userGuess === mikesCountries) {
-        alert(`CONGRATULATIONS! You guessed correctly on your ${i + 1} attempt. Your score is ${score1 - (2 * i)}.`);
-        console.log(`This is try #${i + 1}! And your guess was correct.`);
-        console.log('I cannot believe I got strict equality to work!');
-        score1 = score1 - (2 * i);
-        break;
-    } else {
-        alert(`You have 0 attempts and the correct answer was 16.  On to the last question.`);
-        score1 = 0;
-        console.log(mikesCountries);
-        console.log(userGuess);
-        console.log(`This is try #${i + 1}! And you are out of guesses!`);
+    for (let i = 0; i < tries; i++) {
+        // users guess
+        let userGuess = prompt(`Mike has lived in two other countries besides the United States but visited a lot more. You have ${tries - i} attempts left. Between 5 & 20 what is the number of countries Mike has visited? ONLY enter a number.`);
+        userGuess = parseInt(userGuess);
+        // Conditions comparison
+        // Users guess too high & higher than 20
+        if (userGuess > mikesCountries && userGuess > 20 && i < 3) {
+            alert('I\'m sorry your attempt was incorrect and WAY too high. Remember the number is between 5 & 20.');
+            console.log(`This is try #${i + 1}! And your guess was WAY too high.`);
+            // Users guess too high
+        } else if (userGuess > mikesCountries && userGuess < 20 && i < 3) {
+            alert('I\'m sorry your attempt was incorrect and too high.');
+            console.log(`This is try #${i + 1}! And your guess was too high.`);
+            // Users' guess too low & less than 5
+        } else if (userGuess < mikesCountries && userGuess < 5 && i < 3) {
+            alert('I\'m sorry your attempt was incorrect and WAY too low. Remember the number is between 5 & 20.');
+            console.log(`This is try #${i + 1}! And your guess was WAY too low.`);
+            // Users' guess too low
+        } else if (userGuess < mikesCountries && i < 3) {
+            alert('I\'m sorry your attempt was incorrect and too low.');
+            console.log(`This is try #${i + 1}! And your guess was too low.`);
+            // Users' guess correct with score
+        } else if (userGuess === mikesCountries) {
+            alert(`CONGRATULATIONS! You guessed correctly on your ${i + 1} attempt. Your score is ${score1 - (2 * i)}.`);
+            console.log(`This is try #${i + 1}! And your guess was correct.`);
+            console.log('I cannot believe I got strict equality to work!');
+            score1 = score1 - (2 * i);
+            break;
+        } else {
+            alert(`You have 0 attempts and the correct answer was 16.  On to the last question.`);
+            score1 = 0;
+            console.log(mikesCountries);
+            console.log(userGuess);
+            console.log(`This is try #${i + 1}! And you are out of guesses!`);
+        }
     }
 }
+question6();
 
 // Question 7
 // Array of countries
