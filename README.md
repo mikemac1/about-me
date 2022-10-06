@@ -1,4 +1,4 @@
-# LAB - 2/3
+# LAB - 2/3/4
 
 ## About Me
 
@@ -26,3 +26,8 @@
 * The only reason why I was able to finish was the T/A had me add a boolean flag that "acts like a switch" to use one portion of the loop versus another. I have no frigging idea what that means or why it works but now it works.
 * I feel like such a fake. I have code currently in my JS and no clue why or how it works.  If this is the way I am supposed to feel on day 3 of week 1 this is going to be a long four weeks.
 * I think I made a major mistake signing up for this course as I have almost no confidence going forward.
+
+### Reflections and Comments For Lab 4
+
+* Driver - Harper
+* Nav - Mike
