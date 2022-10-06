@@ -2,8 +2,8 @@
 
 ## About Me
 
-This site is a biography that gives some interaction between the user and site to gain insight about myself. The site has five 'Yes" or 'No" questions using JS' prompt() that will provide specifics about me the developer.
-Added 2 additional quesitons which plays a game of sorts. One is guessing a number, the second is guessing an item in an array. Also some content was added to the HTML side with a list of 10 items.
+4 October 2022 - This site is a biography that gives some interaction between the user and site to gain insight about myself. The site has five 'Yes" or 'No" questions using JS' prompt() that will provide specifics about me the developer.
+5 October 2022 - Added 2 additional quesitons which plays a game of sorts. One is guessing a number, the second is guessing an item in an array. Also some content was added to the HTML side with a list of 10 items.
 
 ### Author: Mike McCarty
 
