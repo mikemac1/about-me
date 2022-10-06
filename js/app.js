@@ -1,5 +1,5 @@
 'use strict';
-/*
+
 console.log('Hello!');
 
 let visitorsName = prompt('What is your name?');
@@ -14,7 +14,7 @@ if (country === 'yes' || country === 'y') {
     alert('That is very cool ' + visitorsName + '! Mike has lived in 2 different countries.');
 } else if (country === 'no' || country === 'n') {
     // console.log('You did it with a no!'); 
-    alert("Don't worry " + visitorsName + ". You have lots of time to get that opportunity. Mike has lived in 2 different countries.");
+    alert("Don't worry " + visitorsName + ". You have lots of time to experience that opportunity. Mike has lived in 2 different countries.");
 } else {
     // console.log("You didn't do it!"); 
     alert("In case you try this again, I need a yes or no answer entered " + visitorsName + ". FYI, Mike has lived in 2 different countries.");
@@ -42,7 +42,7 @@ if (swim === 'yes' || swim === 'y') {
     alert(visitorsName + ', well you have that up on Mike! He is not big on swimming but after being on a submarine he went underwater for days on end and never got wet!');
 } else if (swim === 'no' || swim === 'n') {
     // console.log('You did it with a no!');
-    alert(visitorsName + ", Mike cannot stand putting his head underwater so that is something you have in common.");
+    alert(visitorsName + ", Mike cannot stand putting his head underwater either that is why he served on 2 submarines so he could keep his head dry.");
 } else {
     // console.log("You didn't do it!"); 
     alert("Being a former submariner Mike got to be underwater a lot." + visitorsName + ", if you want to try this again please enter yes or no for your answer and you can find out if Mike likes to swim underwater.");
@@ -87,6 +87,7 @@ let score1 = 10;
 for (let i = 0; i < tries; i++) {
     // users guess
     let userGuess = prompt(`Mike has lived in two other countries besides the United States but visited a lot more. You have ${tries - i} attempts left. Between 5 & 20 what is the number of countries Mike has visited? ONLY enter a number.`);
+    userGuess = parseInt(userGuess);
     // Conditions comparison
     // Users guess too high & higher than 20
     if (userGuess > mikesCountries && userGuess > 20 && i < 3) {
@@ -108,6 +109,7 @@ for (let i = 0; i < tries; i++) {
     } else if (userGuess === mikesCountries) {
         alert(`CONGRATULATIONS! You guessed correctly on your ${i + 1} attempt. Your score is ${score1 - (2 * i)}.`);
         console.log(`This is try #${i + 1}! And your guess was correct.`);
+        console.log('I cannot believe I got strict equality to work!');
         score1 = score1 - (2 * i);
         break;
     } else {
@@ -140,13 +142,14 @@ while (userAttempts < attempts) {
         // Users guess is correct
         if (usersCountry === countries[k]) {
             score2 = score2 - (2 * userAttempts);
-            console.log(`You are correct with ${usersCountry}.`);
             alert(`CONGRATULATIONS! You guessed correctly on your ${userAttempts + 1} attempt. Your score is ${score2 - (2 * userAttempts)}.`);
+            console.log(`You are correct with ${usersCountry}.`);
             guessCorrect = true;
             break;
             // Users guess is incorrect
         } 
     }
+
     if (guessCorrect) {
         break;
     }
@@ -155,6 +158,7 @@ while (userAttempts < attempts) {
         alert(`You guessed incorrectly on your ${userAttempts + 1} attempt, and you have ${attempts - userAttempts - 1} attempts left.`);
         console.log(`You are incorrect with your country and you have ${attempts - userAttempts - 1} left.`);
     } 
+
     if  (!guessCorrect && userAttempts === 5) {
         alert('You have 0 attempts and the correct answer was any of the following: Korea, Japan, Thailand, Australia, or the Philipines.');
         score2 = 0;
@@ -163,8 +167,7 @@ while (userAttempts < attempts) {
     }
     userAttempts++;
 }
-
+console.log('Yeah! You made it out of the while loop.')
 alert(`Congratulations ${visitorsName} your total score for the last two questions was ${score1 + score2}!`);
 
 alert(`Thank you ${visitorsName} for visiting Mike\'s site and have a great day!`);
-*/
