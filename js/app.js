@@ -1,5 +1,5 @@
 'use strict';
-
+/*
 console.log('Hello!');
 
 let visitorsName = prompt('What is your name?');
@@ -167,3 +167,4 @@ while (userAttempts < attempts) {
 alert(`Congratulations ${visitorsName} your total score for the last two questions was ${score1 + score2}!`);
 
 alert(`Thank you ${visitorsName} for visiting Mike\'s site and have a great day!`);
+*/

@@ -8,9 +8,10 @@ header {
 
 h2 {
     font-size: 25px;
-    margin: 10px;
+    margin: 5px;
     text-align: center;
     border-bottom: 2px solid blue;
+    background-color: #E67C57;
 }
 
 h2, p {
@@ -37,10 +38,20 @@ footer {
     margin: 10;
     border-top: 2px solid blue;
     border-bottom: 2px solid blue;
+    font-weight: bold;
 }
 
 .scriptone {
     font-family: 'Bree Serif', serif;
     font-size: 18px;
     margin: 20px 20px;
+}
+
+ol > li {
+    list-style-type: decimal;
+    font-weight: bold;
+}
+
+ol {
+    padding-bottom: 1rem;
 }
