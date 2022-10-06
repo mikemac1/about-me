@@ -2,11 +2,12 @@
 
 console.log('Hello!');
 
-// question 1
+// asks name
 let visitorsName = prompt('What is your name?');
 console.log(visitorsName);
 alert('Hello ' + visitorsName + "! Welcome to Mike's site.");
 
+// question 1
 let country = prompt('Have you lived in another country besides the United States?').toLowerCase();
 console.log(country);
 
