@@ -31,3 +31,7 @@
 
 * Driver - Harper
 * Nav - Mike
+* I was Navigator on: link-to-the-last-PR-your-partner-made - [Harpers PR](https://github.com/mikemac1/about-me/pull/1)
+* I was Driver on: link-to-the-last-PR-you-made-as-Navigator - [Mikes PR](https://github.com/hfoley2013/codefellows-201-about-me/pull/2)
+
+This lab was a 180 degree difference from how I felt when I finished yesterday. Working with Harper was fantastic as he really know how is functions work and I really felt like I learned something from how he approached his JS code. Definitely different than how I approached it, as he really exercised the concepts we have learned. For example his questions were identified in variables which were called upon in an array such that he only had to utilize one loop for all of the questions.  Really an incredible use of reusing code.  I will say that I am afraid I learned much more from him that he did from me!  Hopefully I get to work more with him in the near future.
