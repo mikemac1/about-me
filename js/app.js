@@ -8,19 +8,23 @@ console.log(visitorsName);
 alert('Hello ' + visitorsName + "! Welcome to Mike's site.");
 
 // question 1
-let country = prompt('Have you lived in another country besides the United States?').toLowerCase();
-console.log(country);
+function question1() {
+    let country = prompt('Have you lived in another country besides the United States?').toLowerCase();
+    console.log(country);
 
-if (country === 'yes' || country === 'y') {
-    // console.log('You did it with a yes!'); 
-    alert('That is very cool ' + visitorsName + '! Mike has lived in 2 different countries.');
-} else if (country === 'no' || country === 'n') {
-    // console.log('You did it with a no!'); 
-    alert("Don't worry " + visitorsName + ". You have lots of time to experience that opportunity. Mike has lived in 2 different countries.");
-} else {
-    // console.log("You didn't do it!"); 
-    alert("In case you try this again, I need a yes or no answer entered " + visitorsName + ". FYI, Mike has lived in 2 different countries.");
+    if (country === 'yes' || country === 'y') {
+        // console.log('You did it with a yes!'); 
+        alert('That is very cool ' + visitorsName + '! Mike has lived in 2 different countries.');
+    } else if (country === 'no' || country === 'n') {
+        // console.log('You did it with a no!'); 
+        alert("Don't worry " + visitorsName + ". You have lots of time to experience that opportunity. Mike has lived in 2 different countries.");
+    } else {
+        // console.log("You didn't do it!"); 
+        alert("In case you try this again, I need a yes or no answer entered " + visitorsName + ". FYI, Mike has lived in 2 different countries.");
+    }
 }
+question1();
+
 
 // question 2
 let fish = prompt('Have you ever taken care of pet fish before?').toLowerCase();
@@ -152,7 +156,7 @@ while (userAttempts < attempts) {
             guessCorrect = true;
             break;
             // Users guess is incorrect
-        } 
+        }
     }
 
     if (guessCorrect) {
@@ -162,9 +166,9 @@ while (userAttempts < attempts) {
     if (!guessCorrect && userAttempts < 5) {
         alert(`You guessed incorrectly on your ${userAttempts + 1} attempt, and you have ${attempts - userAttempts - 1} attempts left.`);
         console.log(`You are incorrect with your country and you have ${attempts - userAttempts - 1} left.`);
-    } 
+    }
 
-    if  (!guessCorrect && userAttempts === 5) {
+    if (!guessCorrect && userAttempts === 5) {
         alert('You have 0 attempts and the correct answer was any of the following: Korea, Japan, Thailand, Australia, or the Philipines.');
         score2 = 0;
         console.log(`This is try #${userAttempts + 1}! And you are out of guesses!`);
