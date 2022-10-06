@@ -62,19 +62,22 @@ function question3() {
 question3();
 
 // question 4
-let petDog = prompt('Do you like having dogs as a pet?').toLowerCase();
-console.log(petDog);
+function question4() {
+    let petDog = prompt('Do you like having dogs as a pet?').toLowerCase();
+    console.log(petDog);
 
-if (petDog === 'yes' || petDog === 'y') {
-    // console.log('You did it with a yes!');
-    alert("You and Mike have this in common. Mike has 2 dogs, Laszlo and Blondie and both have lab in them.");
-} else if (petDog === 'no' || petDog === 'n') {
-    // console.log('You did it with a no!');
-    alert("You know it takes a lot of responsibility to take care of a dog so I can understand not everyone does. Mike has 2 dogs, Laszlo and Blondie.");
-} else {
-    // console.log("You didn't do it!"); 
-    alert(visitorsName + ", next time you want to try this again, please enter yes or no for your answer and you can find out if Mike likes dogs as pets.");
+    if (petDog === 'yes' || petDog === 'y') {
+        // console.log('You did it with a yes!');
+        alert("You and Mike have this in common. Mike has 2 dogs, Laszlo and Blondie and both have lab in them.");
+    } else if (petDog === 'no' || petDog === 'n') {
+        // console.log('You did it with a no!');
+        alert("You know it takes a lot of responsibility to take care of a dog so I can understand not everyone does. Mike has 2 dogs, Laszlo and Blondie.");
+    } else {
+        // console.log("You didn't do it!"); 
+        alert(visitorsName + ", next time you want to try this again, please enter yes or no for your answer and you can find out if Mike likes dogs as pets.");
+    }
 }
+question4();
 
 // question 5
 let farmer = prompt('Have you ever wanted to own a farm?').toLowerCase();
