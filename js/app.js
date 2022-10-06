@@ -80,6 +80,7 @@ function question4() {
 question4();
 
 // question 5
+function question5() {
 let farmer = prompt('Have you ever wanted to own a farm?').toLowerCase();
 console.log(farmer);
 
@@ -93,6 +94,8 @@ if (farmer === 'yes' || farmer === 'y') {
     // console.log("You didn't do it!"); 
     alert(visitorsName + ", next time you want to try this again, please enter yes or no for your answer and you can find out what Mike thinks of being a farmer.");
 }
+}
+question5();
 
 // Question 6
 // number to guess
