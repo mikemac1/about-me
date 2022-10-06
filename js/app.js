@@ -25,21 +25,23 @@ function question1() {
 }
 question1();
 
-
 // question 2
-let fish = prompt('Have you ever taken care of pet fish before?').toLowerCase();
-console.log(fish);
+function question2() {
+    let fish = prompt('Have you ever taken care of pet fish before?').toLowerCase();
+    console.log(fish);
 
-if (fish === 'yes' || fish === 'y') {
-    // console.log('You did it with a yes!'); 
-    alert('Wow ' + visitorsName + '! How ironic, Mike takes care of five different fish tanks right now.');
-} else if (fish === 'no' || fish === 'n') {
-    // console.log('You did it with a no!');
-    alert("Taking care of fish is not for everyone " + visitorsName + ". Mike loves taking care of his 5 fish tanks.");
-} else {
-    // console.log("You didn't do it!"); 
-    alert("Mike is an avid fish keeper." + visitorsName + ", if you try this again please enter yes or no for your answer.");
+    if (fish === 'yes' || fish === 'y') {
+        // console.log('You did it with a yes!'); 
+        alert('Wow ' + visitorsName + '! How ironic, Mike takes care of five different fish tanks right now.');
+    } else if (fish === 'no' || fish === 'n') {
+        // console.log('You did it with a no!');
+        alert("Taking care of fish is not for everyone " + visitorsName + ". Mike loves taking care of his 5 fish tanks.");
+    } else {
+        // console.log("You didn't do it!"); 
+        alert("Mike is an avid fish keeper." + visitorsName + ", if you try this again please enter yes or no for your answer.");
+    }
 }
+question2();
 
 // question 3
 let swim = prompt('Do you like to swim underwater?').toLowerCase();
