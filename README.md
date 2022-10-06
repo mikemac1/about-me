@@ -22,7 +22,7 @@ Added 2 additional quesitons which plays a game of sorts. One is guessing a numb
 
 ### Reflections and Comments For Lab 3
 
-* Today was a disaster. After working on this for 6 hours I finally got the last question working in the JS portion. I feel like a failure. I really felt like I understood the fundamentals of loops and come to find out when I applied it I do not.
-* The only reason why I was able to finish was the T/A had me add a boolean flag that "acts like a switch" to use one portion versus another. I have no frigging idea what that means or why it works but now it works.
-* I feel like such a fake. I have code currently in my JS and no clue why it works.  If this is the way I am supposed to feel on day 3 of week 1 this is going to be a long four weeks.
-* I think I made a major mistake signing up for this course.
+* Today was a disaster. After working on this for 6 hours I finally got the last question working in the JS portion. I feel like a failure. I really felt like I understood the fundamentals of loops and come to find out when I applied for today's lab I do not.
+* The only reason why I was able to finish was the T/A had me add a boolean flag that "acts like a switch" to use one portion of the loop versus another. I have no frigging idea what that means or why it works but now it works.
+* I feel like such a fake. I have code currently in my JS and no clue why or how it works.  If this is the way I am supposed to feel on day 3 of week 1 this is going to be a long four weeks.
+* I think I made a major mistake signing up for this course as I have almost no confidence going forward.
