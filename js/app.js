@@ -2,6 +2,7 @@
 
 console.log('Hello!');
 
+// question 1
 let visitorsName = prompt('What is your name?');
 console.log(visitorsName);
 alert('Hello ' + visitorsName + "! Welcome to Mike's site.");
@@ -20,6 +21,7 @@ if (country === 'yes' || country === 'y') {
     alert("In case you try this again, I need a yes or no answer entered " + visitorsName + ". FYI, Mike has lived in 2 different countries.");
 }
 
+// question 2
 let fish = prompt('Have you ever taken care of pet fish before?').toLowerCase();
 console.log(fish);
 
@@ -34,6 +36,7 @@ if (fish === 'yes' || fish === 'y') {
     alert("Mike is an avid fish keeper." + visitorsName + ", if you try this again please enter yes or no for your answer.");
 }
 
+// question 3
 let swim = prompt('Do you like to swim underwater?').toLowerCase();
 console.log(swim);
 
@@ -48,6 +51,7 @@ if (swim === 'yes' || swim === 'y') {
     alert("Being a former submariner Mike got to be underwater a lot." + visitorsName + ", if you want to try this again please enter yes or no for your answer and you can find out if Mike likes to swim underwater.");
 }
 
+// question 4
 let petDog = prompt('Do you like having dogs as a pet?').toLowerCase();
 console.log(petDog);
 
@@ -62,6 +66,7 @@ if (petDog === 'yes' || petDog === 'y') {
     alert(visitorsName + ", next time you want to try this again, please enter yes or no for your answer and you can find out if Mike likes dogs as pets.");
 }
 
+// question 5
 let farmer = prompt('Have you ever wanted to own a farm?').toLowerCase();
 console.log(farmer);
 
@@ -120,7 +125,6 @@ for (let i = 0; i < tries; i++) {
         console.log(`This is try #${i + 1}! And you are out of guesses!`);
     }
 }
-
 
 // Question 7
 // Array of countries
