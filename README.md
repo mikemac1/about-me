@@ -1,10 +1,11 @@
-# LAB - 2/3/4
+# LAB - 2/3/4/5b
 
 ## About Me
 
 4 October 2022 - This site is a biography that gives some interaction between the user and site to gain insight about myself. The site has five 'Yes" or 'No" questions using JS' prompt() that will provide specifics about me the developer.
 5 October 2022 - Added 2 additional quesitons which plays a game of sorts. One is guessing a number, the second is guessing an item in an array. Also some content was added to the HTML side with a list of 10 items.
 6 October 2022 - Practiced pair programming with Harper Foley and made changes to JS code to create functions.
+7 October 2022 - Cleaned up the JavaScript questions to conform with original intent of lab 3 and removed commented out console log code. Also included CSS styles for links and changed the list items to inline under bio.
 
 ### Author: Mike McCarty
 
@@ -36,3 +37,7 @@
 * I was Driver on: link-to-the-last-PR-you-made-as-Navigator - [Mikes PR](https://github.com/hfoley2013/codefellows-201-about-me/pull/2)
 
 This lab was a 180 degree difference from how I felt when I finished yesterday. Working with Harper was fantastic as he really know how is functions work and I really felt like I learned something from how he approached his JS code. Definitely different than how I approached it, as he really exercised the concepts we have learned. For example his questions were identified in variables which were called upon in an array such that he only had to utilize one loop for all of the questions.  Really an incredible use of reusing code.  I will say that I am afraid I learned much more from him that he did from me!  Hopefully I get to work more with him in the near future.
+
+### Reflections and Comments For Lab 5b
+
+It was pretty straight forward to clean up the JS and apply some CSS styles. IF I had more time I would practice applying more styles. I don't really appreciate my site as I would have hoped I could apply a lot of the stretch goals in my site design but found myself not getting to them.
