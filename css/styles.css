@@ -16,7 +16,8 @@ h2 {
     border-top: 2px solid blue;
 }
 
-h2, p {
+h2,
+p {
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -34,10 +35,11 @@ li {
 }
 
 ul {
-    margin-bottom: 10px;;
+    margin-bottom: 10px;
+    ;
 }
+
 footer {
-    text-align: center;
     margin: 10;
     border-top: 5px solid blue;
     border-bottom: 5px solid blue;
@@ -52,7 +54,7 @@ footer {
     margin: 20px 20px;
 }
 
-ol > li {
+ol>li {
     list-style-type: decimal;
     font-weight: bold;
 }
@@ -76,10 +78,41 @@ ol {
     width: 48%;
     font-size: 18px;
 }
+
 a:hover {
     color: rgb(165, 172, 175);
 }
 
 a:visited {
     color: #69BE28;
+}
+
+.column {
+    float: left;
+    width: 33.3%;
+    margin-top: 10px;
+ }
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#familyPic {
+    padding-left: 25px;
+}
+
+#laszloPic {
+    height: 335px;
+    padding-left: 150px;
+}
+
+#foottop {
+    padding-top: 100px;
+    padding-left: 150px;
+}
+
+#footbot {
+    padding-left: 190px;
 }
